@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hristijan Stoimilov</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function sendEmail(){
+            var name=document.getElementById("name").value;
+            var subject=document.getElementById("subject").value;
+            var email=document.getElementById("email").value;
+            var comment=document.getElementById("comment").value;
+
+            var body="Name: "+ name + "\n";
+            body+= "Subject: "+ subject +"\n";
+            body+= "Email: "+ email + "\n";
+            body+= "Message: "+ comment;
+
+            var mailtoUrl = "mailto:hstoimilov@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+            window.open(mailtoUrl);
+        }
+
+    </script>
+</head>
+<body>
+<header>
+    <div id="images">
+        <img class="images" src="images/01.jpg">
+        <img class="images" src="images/02.jpg">
+        <img class="images" src="images/03.jpg">
+        <img class="images" src="images/04.jpg">
+        <img class="images" src="images/05.jpg">
+    </div>
+    <div id="menu">
+        <h1>Hristijan Stoimilov</h1>
+        <div class="link">
+            <ul>
+                <li><a href="#bio">Biography</a></li>
+                <li><a href="#erasmus">Projects</a></li>
+                <li><a href="#hobby">Hobbies</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <img id="left" src="images/left.jpg">
+    <img id="right" src="images/right.jpg">
+</header>
+<div id="body">
+    <div id="bio">
+        <h1>Biography</h1>
+        <p>Greetings! I am Hristijan Stoimilov, a curious and passionate individual with a multitude of interests and talents. As a male, I have had the privilege of pursuing my studies in Computer Science while embarking on a fascinating journey of self-discovery.</p>
+        <p>I completed my primary education at OU "Kiril and Metodij," a renowned school that provided me with a solid foundation for my future endeavors. It was during these formative years that I began to realize my affinity for technology and my desire to unravel its mysteries.</p>
+        <p>Following my successful completion of primary school, I continued my educational journey at SOU "Ljupco Santov" gimnasium. This esteemed institution further nurtured my intellectual growth and fostered my passion for knowledge. It was here that I honed my critical thinking skills, expanded my horizons, and delved deeper into the world of computer science.</p>
+        <p>In addition to my academic pursuits, music has always played a significant role in my life. The soothing melodies of the guitar have been my steadfast companion, allowing me to express my emotions and immerse myself in the power of music. With each strum, I journey through different genres, constantly refining my skills and seeking new avenues for creative expression.</p>
+        <img src="images/photo.jpg">
+    </div>
+    <div id="erasmus">
+        <h1>Erasmus Projects</h1>
+        <img src="images/erasmusss.jpeg">
+        <p>I have had the privilege of being part of impactful Erasmus projects that have enriched my understanding and skills.</p>
+        <p>One of these projects was "Creative Vibrations," an Erasmus project that I participated in, which took place in Poland. Through this experience, I had the opportunity to collaborate with students and educators from various cultural backgrounds, engaging in creative and innovative activities. This project allowed me to develop my creativity, cross-cultural communication, and teamwork skills, while also fostering a deeper appreciation for diverse perspectives.</p>
+        <p>Additionally, I had the chance to be part of the "Democratic Schools" project, which took place in Lithuania. This project focused on promoting democratic values in education and empowering students to actively participate in decision-making processes. It allowed me to witness and engage in alternative educational models, understanding the importance of participatory learning environments. This experience enhanced my understanding of non-formal education and the role of facilitators in empowering young people.</p>
+    </div>
+    <div id="hobby">
+        <h1>Hobbies</h1>
+        <img src="images/g1.jpg">
+        <p>Playing the guitar has been an integral part of my life, where I have cultivated skills for both solo and rhythm playing. With years of dedicated practice, I have honed my abilities to create melodic solos that resonate with the emotions of the listener. Whether it's bending strings to infuse soulful blues or shredding through intricate metal riffs, the guitar has become an extension of my creative expression. My collection of guitars is a testament to my passion, including a versatile 12-stringed Fender guitar that adds a rich and resonant sound to my compositions, a meticulously crafted replica of the iconic Les Paul that allows me to channel the timeless rock tones, and two acoustic guitars that bring warmth and authenticity to my acoustic performances.</p>
+        <p>In addition to my skills in solo and rhythm playing, I find immense joy and fulfillment in simply playing the guitar. Strumming the chords and creating harmonies with my fingertips provides a sense of tranquility and creative release. Whether I'm playing soft ballads by the campfire or energetic folk tunes at intimate gatherings, the guitar becomes a medium through which I connect with others and share the power of music. It is through this instrument that I can communicate my deepest emotions and forge connections with fellow musicians and audiences alike. The guitar has become a faithful companion, accompanying me on countless musical adventures and inspiring me to explore new melodies and compositions.</p>
+        <img src="images/g2.jpg">
+    </div>
+    <div id="photos">
+        <h1>Photos</h1>
+        <img src="images/photo1.jpg">
+        <img src="images/photo2.jpg">
+        <img src="images/photo3.jpg">
+        <img src="images/photo4.jpg">
+        <p>Some of the better photos I took.</p>
+    </div>
+    <div id="contact">
+        <h1>Contact:</h1>
+        <div class="form">
+            <form id="contact-form" method="POST" onsubmit="sendEmail(); return false;">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="comment">Comment:</label>
+                    <textarea rows="7" cols="20" id="comment" name="comment" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="logos">
+        <a href="https://www.facebook.com/hristijan.stoimilov.9">
+            <img src="images/fb.png" height="60" width="100">
+        </a>
+        <a href="https://www.instagram.com/hstoimilov/">
+            <img src="images/ig.png" height="50" width="50">
+        </a>
+    </div>
+</div>
+</body>
+</html>

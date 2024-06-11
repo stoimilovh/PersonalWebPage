@@ -1,0 +1,227 @@
+header{
+    background: url("images/hb.jpg");
+    position: relative;
+    background-color: #65a590;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#left{
+    margin-top: -15px;
+    position: absolute;
+    z-index: -1;
+}
+#right{
+    padding-left: 1409px;
+    margin-top: -15px;
+    position: absolute;
+    z-index: -1;
+}
+header #images{
+    padding-left: 300px;
+    padding-top: 30px;
+}
+.images{
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 180px;
+    width: 180px;
+    margin: -2px;
+    transform: translateX(10px);
+    transition: 1.1s all;
+}
+.images:nth-child(odd):hover{
+    height: 190px;
+    width: 190px;
+    z-index: 1;
+    box-shadow: 6px 6px 40px 10px #00496C;
+    transform: translateX(8px);
+}
+.images:nth-child(even):hover{
+    color: ;
+    height: 190px;
+    width: 190px;
+    z-index: 1;
+    box-shadow: 6px 6px 40px 10px #C5D19B;
+    transform: translateX(8px);
+}
+header h1{
+    color: white;
+    font-family: "Felix Titling", sans-serif;
+    padding-left: 590px;
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+.link ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 50px;
+    background-color: #c5d19b;
+    height: 25px;
+    width: 140px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 5px;
+}
+.link{
+    padding-left: 210px;
+}
+.link ul li a{
+    font-family: "Felix Titling", cursive;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+#body h1{
+    font-family: Vivaldi, cursive;
+    letter-spacing: 2px;
+}
+#body div:nth-child(odd) h1{
+    color: #00496c;
+}
+#body div:nth-child(even) h1{
+    color: #ffd72c;
+}
+#body p{
+    font-family: "Adobe Myungjo Std M", serif;
+}
+#menu{
+    position: relative;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+#bio{
+    margin-top: 50px;
+    padding-top: 50px;
+}
+#bio p{
+    padding-left: 350px;
+    width: 500px;
+}
+#bio h1{
+    padding-left: 300px;
+}
+#bio img{
+    scale: 20%;
+    padding-left: 700px;
+    margin-top: -1260px;
+}
+#erasmus{
+    margin-top: -700px;
+}
+#erasmus img{
+    scale: 30%;
+    margin-left: -500px;
+    margin-top: -550px;
+}
+#erasmus h1{
+    padding-left: 1080px;
+    margin-top: -500px;
+}
+#erasmus p{
+    text-align: right;
+    width: 500px;
+    padding-left: 820px;
+    margin-top: 40px;
+}
+#erasmus p:first-of-type{
+    margin-top: -950px;
+}
+#hobby{
+    margin-top: 120px;
+}
+#hobby h1{
+    padding-left: 700px;
+}
+#hobby p:first-of-type{
+    width: 300px;
+    padding-left: 420px;
+    margin-top: -1120px;
+    text-align: center;
+}
+#hobby p:last-of-type{
+    width: 300px;
+    padding-left: 830px;
+    margin-top: -345px;
+    text-align: center;
+}
+#hobby img:first-of-type{
+    scale: 20%;
+    margin-top: -790px;
+    margin-left: -300px;
+}
+#hobby img:last-of-type{
+    scale: 24%;
+    margin-top: -980px;
+    padding-left: 1350px;
+}
+#photos{
+    margin-top: -550px;
+}
+#photos h1{
+    padding-left: 700px;
+}
+#photos img{
+    height: 490px;
+    width: 350px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+#photos img:hover{
+    opacity: 0.9;
+}
+#photos img:first-of-type{
+    padding-left: 50px;
+}
+#photos p{
+    padding-left: 650px;
+}
+#contact h1{
+    margin-top: 70px;
+    padding-left: 690px;
+}
+.form{
+    float: right;
+}
+.form form{
+    padding-right: 650px;
+}
+.form form fieldset{
+    height: 370px;
+    width: 200px;
+}
+.form form fieldset label{
+    display: block;
+    margin-top: 20px;
+}
+.logos a img{
+    margin-top: 10px;
+}
+.logos{
+    padding-left: 670px;
+}
+#body > div.logos > a:nth-child(1) img{
+    height: 60px;
+    width: 60px;
+    scale: 90%;
+    padding-left: 40px;
+}
+#body > div.logos > a:nth-child(2) img{
+    padding-left: 25px;
+    padding-bottom: 5px;
+    scale: 110%;
+}
+#body{
+    margin-top: -50px;
+    margin-left: -10px;
+    background-image: url("images/back2.jpg");
+    height: 2900px;
+}
+header, #body{
+    width: 1520px;
+}
